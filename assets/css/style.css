@@ -3,10 +3,10 @@
     --color-white: rgb(255, 255, 255);
     --text-color-second: rgb(27, 26, 26);
     --text-color-third: rgb(255, 175, 204);
-    --first-color: rgb(189, 224, 254);
-    --first-color-hover: rgb(189, 224, 254);
-    --second-color: rgb(189, 224, 254);
-    --third-color: rgb(192, 166, 49);
+    --first-color: rgb(27, 26, 26);
+    --first-color-hover: rgb(184, 224, 210);
+    --second-color: rgb(184, 224, 210);
+    --third-color: rgb(213, 189, 175);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
 *{
