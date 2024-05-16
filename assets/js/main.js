@@ -84,3 +84,4 @@ sections.forEach(current =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+
