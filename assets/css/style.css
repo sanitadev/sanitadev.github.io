@@ -1,17 +1,14 @@
-
-/* ----- VARIABLES ----- */
 :root{
-    --body-color: rgb(250, 250, 250);
+    --body-color:radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%) ;
     --color-white: rgb(255, 255, 255);
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
-    --second-color: rgb(0, 201, 255);
+    --text-color-second: rgb(27, 26, 26);
+    --text-color-third: rgb(255, 175, 204);
+    --first-color: rgb(189, 224, 254);
+    --first-color-hover: rgb(189, 224, 254);
+    --second-color: rgb(189, 224, 254);
     --third-color: rgb(192, 166, 49);
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 }
-/* ----- BASE ----- */
 *{
     margin: 0;
     padding: 0;
@@ -75,7 +72,6 @@ nav{
     width: 100%;
     height: 90px;
     line-height: 90px;
-    background: var(--body-color);
     padding-inline: 9vw;
     transition: .3s;
     z-index: 100;
@@ -219,19 +215,15 @@ nav{
     height: 380px;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
-    animation: imgFloat 7s ease-in-out infinite;
+    
 }
 .image img{
     width: 380px;
     height: 380px;
     object-fit: cover;
 }
-@keyframes imgFloat {
-    50%{
-        transform: translateY(10px);
-        border-radius: 45% 55% 45% 55%;
-    }
-}
+
+
 .scroll-btn{
    position: absolute;
    bottom: 0;
@@ -354,14 +346,14 @@ h3{
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     overflow: hidden;
 }
-.project-box>i{
-    font-size: 50px;
-    color: #00B5E7;
-    margin-bottom: 25px;
-}
+
 .project-box label{
     font-size: 15px;
     color: #777;
+}
+.project-box a, h3 {
+    color:black;
+    text-decoration: none;
 }
 .project-box::after, .contact-info::after{
     content: "";
@@ -379,6 +371,7 @@ h3{
 }
 .project-box:hover.project-box i,
 .project-box:hover.project-box>h3,
+.project-box:hover.project-box>a
 .project-box:hover.project-box>label{
     color: var(--color-white);
     z-index: 2;
@@ -436,8 +429,8 @@ h3{
 .input-field{
     width: 50%;
     height: 55px;
-    background: transparent;
-    border: 2px solid #AAA;
+    background: rgb(255, 255, 255);
+    border: 2px solid #1b1a1a;
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
@@ -445,8 +438,8 @@ h3{
 textarea{
     width: 100%;
     height: 250px;
-    background: transparent;
-    border: 2px solid #AAA;
+    background: rgb(255, 255, 255);
+    border: 2px solid #000000;
     border-radius: 10px;
     padding: 15px 20px;
     outline: none;
@@ -460,7 +453,7 @@ textarea{
     color: var(--color-white);
 }
 .form-button>.btn:hover{
-    background: #00B5E7;
+    background: #5c5b5c;
 }
 .form-button i{
     font-size: 18px;
@@ -473,7 +466,6 @@ footer{
     align-items: center;
     flex-direction: column;
     row-gap: 30px;
-    background: #F8F8F8;
     padding-block: 40px 60px;
 }
 .top-footer p{
@@ -580,10 +572,10 @@ footer{
     .about-info, .contact-info{
         width: 100%;
     }
-    .achievements-container{
+    .projects-container{
         justify-content: center;
     }
-    .achievements-box{
+    .projects-box{
         width: 80%;
     }
 }
