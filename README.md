@@ -1,2 +1,2 @@
-# sanitadev-portfolio-website
+# Sanita Čolpa - Portfolio website 
  
