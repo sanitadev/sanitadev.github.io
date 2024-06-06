@@ -413,6 +413,7 @@ header{
 .footer{
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     row-gap: 1.4rem;
     padding: 30pz 0;
