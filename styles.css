@@ -407,7 +407,7 @@ header{
 .contact-form .send-btn:hover{
     background: #546eff;
     transition: 0.3s all linear;
-    
+
 }
 
 .footer{
@@ -420,12 +420,12 @@ header{
 
 .footer p{
     font-size: 0.9rem;
+    
 }
 
 .footer-links{
     display: flex;
     align-items: center;
-    justify-content: center;
     column-gap: 1rem;
 }
 
