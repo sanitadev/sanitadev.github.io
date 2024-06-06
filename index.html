@@ -2,240 +2,157 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Sanita</title>
-</head>
-<body>
-    <div class="container">
-        <nav id="header">
-           <div class="nav-logo">
-               <p class="nav-name">Sanita</p>
-               <span>.</span>
-           </div>
-           <div class="nav-menu" id="myNavMenu">
-               <ul class="nav_menu_list">
-                   <li class="nav_list">
-                       <a href="#home" class="nav-link active-link">Home</a>
-                       <div class="circle"></div>
-                   </li>
-                   <li class="nav_list">
-                       <a href="#about" class="nav-link">About</a>
-                       <div class="circle"></div>
-                   </li>
-                   <li class="nav_list">
-                       <a href="#projects" class="nav-link">Projects</a>
-                       <div class="circle"></div>
-                   </li>
-                   <li class="nav_list">
-                       <a href="#contact" class="nav-link">Contact</a>
-                       <div class="circle"></div>
-                   </li>
-               </ul>
-           </div>
-           <div class="nav-menu-btn">
-               <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-           </div>
-         </nav>
-    <main class="wrapper">
-       <section class="featured-box" id="home">
-          <div class="featured-text">
-            <div class="featured-text-card">
-                <span>Sanita Čolpa</span>
-            </div>
-            <div class="featured-name">
-                <p>I'm <span class="typedText"></span></p>
-            </div>
-            <div class="featured-text-info">
-                <p>A spirited software developer on a mission to turn lines of code into meaningful solutions.
-                </p>
-            </div>
-            <div class="featured-text-btn">
-                <button class="btn blue-btn">Hire Me</button>
-                <button class="btn"><a href="Sanita Colpa CV.pdf" download></a>Download CV <i class="uil uil-file-alt"></i></button>
-            </div>
-            <div class="social_icons">
-                <div class="icon"><i class="uil uil-instagram"></i></div>
-                <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-                <div class="icon"><i class="uil uil-dribbble"></i></div>
-                <div class="icon"><i class="uil uil-github-alt"></i></div>
-            </div>
-          </div>
-          <div class="featured-image">
-            <div class="image">
-                <img src="assets/images/developer.png" alt="avatar">
-            </div>
-          </div>
-          <div class="scroll-icon-box">
-            <a href="#about" class="scroll-btn">
-                <i class="uil uil-mouse-alt"></i>
-                <p>Scroll Down</p>
-            </a>
-          </div>
+    <title>SANITA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
 
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <h1>About Me</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>My introduction</h3>
-                    <p>I am well-versed in HTML, CSS and JavaScript , and other cutting edge
-                       frameworks and libraries,which allows me to implement interactive features.
+            <div class="nav container">
+
+                 <a href="#" class="logo"> Sanita </a>
+
+                <ul class="navbar">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#home" class="nav-link">Contact</a></li>
+                </ul>
+
+            <div class="menu-icon">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+        </header>
+        <section class="home container="home">
+            <div class="home-content">
+                <div class="home-img">
+                    <img src="profile.png" alt="">
+                </div>
+                <div class="home-text">
+                    <h3>Hello</h3>
+                    <h2>I'm <span clas="color">Sanita</span></h2>
+                    <p>I'm <span class="color">Software Developer </span> who has a strong passion for building <span class="color">web </span> & <span class="color"> mobile application. </span>
+                       <br> Here's a bit more <span class="color"> about me. </span>
                     </p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Frontend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>Bootstrap</span>
-                        <span>JavaScript</span>
-                        <span>Vue</span>
-                        <span>React</span>
-                        <span>Angular</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Backend</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>PHP</span>
-                        <span>JAVA</span>
-                        <span>Python</span>
-                        <span>C++</span>
-                        <span>C#</span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Database</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>MySQL</span>
-                        <span>PostgreSQL</span>
-                        <span>MongoDB</span>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></i></a>
                     </div>
                 </div>
             </div>
-          </div>
-       </section>
+        
+        </section>
 
-       <!-- -------------- PROJECT BOX ---------------- -->
+<section class="about container" id="about">
+    
+    <h2 class="heading">About</h2>
 
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Projects</h1>
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <img src="project_image_3.jpg" alt="Project Image 1">
-                <a href="project_link"></a>
-                <label>Lorem Ipsum</label>
-            </div>
-            <div class="project-box">
-                <img src="project_image_1.jpg" alt="Project Image 2">
-                <a href="project_link"></a>
-                <label>Lorem Ipsum</label>
-            </div>
-            <div class="project-box">
-                <img src="project_image_3.jpg" alt="Project Image 3">
-                <a href="project_link"></a>
-                <label>Lorem Ipsum</label>
-            </div>
-          </div>
-       </section>
-
-       <!-- -------------- CONTACT BOX ---------------- -->
-
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <p>Do you have a project in your mind, contact me here</p>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: colpasanita@gmail.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +38762054304</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
-                    </div>
-                </div>
-             </div>
-          </div>
-       </section>
-
-    </main>
-
-
-    <!-- --------------- FOOTER --------------- -->
-    <footer>
-        <div class="top-footer">
-            <p>Sanita Čolpa .</p>
+    <div class="about-content">
+        <div class="about-data">
+            <span>About Me</span>
+            <h2>Software Developer <br>
+                Web & Mobile Development</h2>
+                <a href="sc-cv.pdf" class="btn" download="">
+                    Download CV
+                    <i class='bx bx-download'></i>
+                </a>
         </div>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        <div class="about-text">
+            <p>Hello! I'm Sanita Čolpa. Software Developer.</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
         </div>
-        <div class="footer-social-icons">
-            <div class="icon"><i class="uil uil-instagram"></i></div>
-            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
-            <div class="icon"><i class="uil uil-dribbble"></i></div>
-            <div class="icon"><i class="uil uil-github-alt"></i></div>
-        </div>
-        <div class="bottom-footer">
-            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Sanita Čolpa</a> - All rights reserved</p>
-        </div>
-    </footer>
-
     </div>
+</div>
+</section>
+<section class="services container" id="services">
 
+    <h2 class="heading">Services</h2>
 
+    <div class="services-content">
+        <div class="services-box">
+            <i class='bx bx-code-alt' ></i>
+            <h2>Web Development</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-code-alt' ></i>
+            <h2>Web Development</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-code-alt' ></i>
+            <h2>Web Development</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+        </div>
+    </div>
+</section>
+<section class="portfolio container" id="portfolio">
 
+    <h2 class="heading">Portfolio</h2>
 
-    <!-- ----- TYPING JS Link ----- -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <div class="portfolio-content">
+        <div class="portfolio-box">
+            <img src="portfolio-1.webp" alt="" class="portfolio-img">
 
-       <!-- ----- SCROLL REVEAL JS Link----- -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+            <div class="portfolio-overlay">
+                <h2>Project Name</h2>
+                <a href="#">
+                    <i class='bx bx-link-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="portfolio-1.webp" alt="" class="portfolio-img">
 
-    <!-- ----- MAIN JS ----- -->
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+            <div class="portfolio-overlay">
+                <h2>Project Name</h2>
+                <a href="#">
+                    <i class='bx bx-link-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="portfolio-1.webp" alt="" class="portfolio-img">
+
+            <div class="portfolio-overlay">
+                <h2>Project Name</h2>
+                <a href="#">
+                    <i class='bx bx-link-alt'></i>
+                </a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="portfolio-1.webp" alt="" class="portfolio-img">
+
+            <div class="portfolio-overlay">
+                <h2>Project Name</h2>
+                <a href="#">
+                    <i class='bx bx-link-alt'></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact container id="contact">
+
+    <h2 class="heading">Contact</h2>
+
+    <form action="mailto:colpasanita@example.com" class="contact-form" id="contact-form">
+        <input type="text" placeholder="Your Name" class="name" required>
+        <input type="email" name="" id="" placeholder="Email address..." class="email" required>
+        <textarea name="" cols="30" rows="10" placeholder="Write message here..." class="message" required></textarea>
+        <input type="submit" value="Send" class="send-btn">
+    </form>
+</section>
+
+    <script src="main.js"></script>
+    </body>
+    </html>
