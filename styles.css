@@ -401,14 +401,28 @@ header{
     transition: 0.3s all ease 0s;
 }
 
+.contact-box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+
+}
+
+.contact-box h3{
+    margin-left: 2.8rem;
+    padding: 2rem;
+}
 .contact-form{
     max-width: 600px;
     margin: auto;
-    width: 100%;
+    width: 110%;
     display: grid;
     row-gap: 1rem;
 }
-
+.contact-text{
+text-align: center;
+padding-bottom: 2rem;
+}
 
 .contact-form input, .contact-form textarea{
     border: none;
@@ -421,12 +435,13 @@ header{
 }
 
 .contact-form .send-btn{
-    width: 120px;
-    font-size: 1rem;
+    width: 140px;
+    font-size: 0.9rem;
     letter-spacing: 1px;
     font-weight: 500;
     text-transform: uppercase;
     padding: 12px;
+    align-items: self-start;
     background: var(--main-color);
     cursor: pointer;
 }
@@ -434,6 +449,7 @@ header{
 .contact-form .send-btn:hover{
     background: #546eff;
     transition: 0.3s all linear;
+
 }
 
 
