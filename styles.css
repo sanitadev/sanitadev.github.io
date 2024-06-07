@@ -479,7 +479,7 @@ padding-bottom: 2rem;
 .map{
     width:300px;
     height:280px;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
 
 }
 .map iframe{
@@ -494,7 +494,7 @@ padding-bottom: 2rem;
     align-items: center;
     flex-direction: column;
     row-gap: 1.4rem;
-    padding: 30pz 0;
+    padding: 30px 0;
 }
 
 .footer p{
