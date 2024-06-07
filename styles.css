@@ -455,7 +455,7 @@ padding-bottom: 2rem;
 .contact-form .send-btn{
     border: none;
     outline: none;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     padding: 15px;
     color: var(--bg-color);
     border-radius: 0.4rem;
@@ -661,7 +661,6 @@ padding-bottom: 2rem;
     padding-top: 3rem;
     margin-top: 2.5rem;
 }
-
 }
 
 @media(max-width:450px){
