@@ -249,6 +249,32 @@ header{
     margin: 1 rem 0;
 }
 
+.technologies-content{
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+}
+.technologies-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    border-radius: 0.4rem;
+    transition: 0.5s cubic-bezier(0.075, 0.82, 0.165. 1);
+}
+.technologies-box .bx{
+    font-size: 1.8rem;
+    padding: 10px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background: var(--container-color);
+}
+.technologies-box .bx:hover{
+    background: var(--main-color);
+    transition: 0.3s all linear;
+}
+
 .btn{
     font-size: 0,97rem;
     display: inline-flex;
