@@ -216,20 +216,21 @@
     <h2 class="heading">Get In Touch</h2>
 <div class="contact-box">
   <div class="contact-text">
-    <h3>Do you have any project in mind?<br>Feel free to contact me.</h3>
-       <form action="" class="contact-form" id="contact-form">
-          <input type="text" placeholder="Your Name" class="name" required>
-          <input type="email" name="" id="" placeholder="Email address" class="email" required>
-          <input type="subject" name="" id="" placeholder="Subject" class="subject" required>
+    <h3>Do you have a project in mind?<br>Feel free to contact me.</h3>
+       <form action="https://api.web3forms.com/submit" class="contact-form" id="contact-form">
+          <input type="hidden" name="access_key" value="a7ebba64-eb7f-4725-a781-4ccbf226bf73">
+          <input type="text" placeholder="Full name" class="fname" maxlength="100" size="50" required>
+          <input type="email" name="" id="" placeholder="Email address" class="email" maxlength="100" size="50" required>
+          <input type="subject" name="" id="" placeholder="Subject" class="subject" maxlength="100" size="50" required>
           <textarea name="" cols="30" rows="10" placeholder="Write message here" class="message" required></textarea>
-          <input type="submit" value="Send message" class="send-btn">
+          <div class="button-container">
+
+            <button type="submit" value="Send" class="send-btn">Send message</button>
+          </div>
         </form>
     </div>
     <div class="contact-info">
         <div class="contact-content">
-        <h4><i class='bx bx-home-alt' ></i> Location </h4>
-        <p>Sarajevo, Bosnia and Herzegovina</p>
-        </div>
         <div class="contact-content">
             <h4><i class='bx bx-envelope' ></i> Email </h4>
             <p>colpasanita@gmail.com</p>
@@ -238,16 +239,18 @@
                 <h4><i class='bx bx-phone' ></i> Phone number </h4>
                 <p>+38762054304</p>
         </div>
-    </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92005.32941428118!2d18.300418710546964!3d43.89381728102656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758cbb1ed719bd1%3A0x562ecda6de87b33e!2sSarajevo!5e0!3m2!1shr!2sba!4v1717783336751!5m2!1shr!2sba" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>   
 </div>
 </section>
 <section class="footer container" id="footer">
     <div class="social">
          <a href="mailto:colpasanita@gmail.com"><i class='bx bx-envelope' ></i></a>
-         <a href="https://www.github.com/sanitadev" target="_blank"><i class='bx bxl-github' ></i></a>
+         <a href="#"><i class='bx bxl-github' ></i></a>
          <a href="#"><i class='bx bxl-instagram'></i></a>
          <a href="#"><i class='bx bxl-twitter' ></i></a>
-         <a href="https://www.linkedin.com/in/sanitacolpa" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+         <a href="#"><i class='bx bxl-linkedin' ></i></i></a>
     </div>
     <div class="footer-links">
         <a href="#">Privacy Policy</a>
