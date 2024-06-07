@@ -478,13 +478,13 @@ padding-bottom: 2rem;
 
 .map{
     width:300px;
-    height:250px;
+    height:280px;
     padding-top: 2.5rem;
 
 }
 .map iframe{
     width: 300px;
-    height: 250px;
+    height: 280px;
     margin-left: 10px;
 }
 
@@ -687,5 +687,4 @@ padding-bottom: 2rem;
    .heading{
     font-size: 3rem;
    }
-
 }
