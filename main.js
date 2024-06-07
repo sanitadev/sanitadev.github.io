@@ -1,4 +1,4 @@
-let menu=document.querySelector('.menu-icon');
+let menu = document.querySelector('.menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menu.onclick = () => {
@@ -10,7 +10,6 @@ window.onscroll = () => {
     navbar.classList.remove('open-menu');
     menu.classList.remove('move');
 }
-
 
   
 
