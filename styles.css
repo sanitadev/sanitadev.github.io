@@ -404,8 +404,8 @@ header{
 .contact-box{
     position:relative;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
 
 }
 
