@@ -274,6 +274,7 @@ header{
     background: var(--main-color);
     transition: 0.3s all linear;
 }
+
 .btn{
     font-size: 0,97rem;
     display: inline-flex;
@@ -301,7 +302,6 @@ header{
     text-align: justify;
     margin-bottom: 1.5rem;
 }
-
 
 .services-content{
     display: grid;
@@ -346,7 +346,7 @@ header{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 2rem;
 }
 
@@ -436,6 +436,7 @@ header{
 
 }
 
+
 .footer{
     display: flex;
     align-items: center;
@@ -446,7 +447,7 @@ header{
 
 .footer p{
     font-size: 0.9rem;
-    
+
 }
 
 .footer-links{
