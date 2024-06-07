@@ -346,7 +346,7 @@ header{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
 }
 
@@ -409,6 +409,7 @@ header{
     row-gap: 1rem;
 }
 
+
 .contact-form input, .contact-form textarea{
     border: none;
     outline: none;
@@ -433,7 +434,6 @@ header{
 .contact-form .send-btn:hover{
     background: #546eff;
     transition: 0.3s all linear;
-
 }
 
 
