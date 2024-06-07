@@ -417,7 +417,7 @@ header{
 .contact-form{
     max-width: 600px;
     margin: auto;
-    width: 110%;
+    width: 100%;
     display: grid;
     row-gap: 1rem;
 }
