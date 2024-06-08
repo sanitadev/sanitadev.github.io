@@ -513,8 +513,11 @@ header{
     
 }
 
-
-
+.contact-info iframe {
+    margin-top: 6rem;
+    width: 120%;
+    height: 68.5%;
+}
 
 .footer{
     display: flex;
