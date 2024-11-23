@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message']);
 
     // Tvoj email
-    $to = "tvojemail@example.com"; 
+    $to = "colpasanita@gmail.com"; 
     $headers = "From: $email" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
                "Content-type: text/plain; charset=UTF-8";
