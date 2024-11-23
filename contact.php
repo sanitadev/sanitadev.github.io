@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // E-mail konfiguracija
-    $to = "your-email@example.com"; // Zamijeni sa svojom e-mail adresom
+    $to = "colpasanita@gmail.com"; // Zamijeni sa svojom e-mail adresom
     $headers = "From: $name <$email>" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
                "Content-Type: text/plain; charset=utf-8";
