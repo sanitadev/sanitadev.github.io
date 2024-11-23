@@ -1,27 +1,41 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['full_name']);
-    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
-    $subject = htmlspecialchars($_POST['subject']);
-    $message = htmlspecialchars($_POST['message']);
+    // Dohvaćanje podataka iz forme
+    $name = htmlspecialchars(trim($_POST['name']));
+    $email = htmlspecialchars(trim($_POST['email']));
+    $subject = htmlspecialchars(trim($_POST['subject']));
+    $message = htmlspecialchars(trim($_POST['message']));
 
-    // Tvoj email
-    $to = "colpasanita@gmail.com"; 
-    $headers = "From: $email" . "\r\n" .
+    // Validacija podataka
+    if (empty($name) || empty($email) || empty($subject) || empty($message)) {
+        echo "<script>alert('All fields are required.'); window.history.back();</script>";
+        exit;
+    }
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "<script>alert('Invalid email address.'); window.history.back();</script>";
+        exit;
+    }
+
+    // E-mail konfiguracija
+    $to = "your-email@example.com"; // Zamijeni sa svojom e-mail adresom
+    $headers = "From: $name <$email>" . "\r\n" .
                "Reply-To: $email" . "\r\n" .
-               "Content-type: text/plain; charset=UTF-8";
+               "Content-Type: text/plain; charset=utf-8";
 
-    $full_message = "Name: $name\n";
-    $full_message .= "Email: $email\n\n";
-    $full_message .= "Message:\n$message\n";
+    $fullMessage = "You have received a new message from your website:\n\n" .
+                   "Name: $name\n" .
+                   "Email: $email\n" .
+                   "Subject: $subject\n" .
+                   "Message:\n$message\n";
 
-    if (mail($to, $subject, $full_message, $headers)) {
-        echo "Your message has been sent successfully.";
+    // Slanje e-maila
+    if (mail($to, $subject, $fullMessage, $headers)) {
+        echo "<script>alert('Your message has been sent successfully.'); window.location.href = 'index.html';</script>";
     } else {
-        echo "There was an error sending your message.";
+        echo "<script>alert('Sorry, there was an error sending your message.'); window.history.back();</script>";
     }
 } else {
-    echo "Invalid request.";
+    echo "<script>alert('Invalid request method.'); window.history.back();</script>";
 }
 ?>
 
