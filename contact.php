@@ -1,17 +1,30 @@
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['full_name']);
+    $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+    // Tvoj email
+    $to = "tvojemail@example.com"; 
+    $headers = "From: $email" . "\r\n" .
+               "Reply-To: $email" . "\r\n" .
+               "Content-type: text/plain; charset=UTF-8";
 
-$mailheader = "From:".$name."<".$email.">\r\n";
+    $full_message = "Name: $name\n";
+    $full_message .= "Email: $email\n\n";
+    $full_message .= "Message:\n$message\n";
 
-$recipient = "colpasanita@gmail.com";
+    if (mail($to, $subject, $full_message, $headers)) {
+        echo "Your message has been sent successfully.";
+    } else {
+        echo "There was an error sending your message.";
+    }
+} else {
+    echo "Invalid request.";
+}
+?>
 
-mail($recipient, $subject, $message, $mailheader) or die("Error!");
-
-echo
 
 <!DOCTYPE html>
 <html lang="en">
